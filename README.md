@@ -47,6 +47,25 @@ Used for advanced data visualizations.
 
 These libraries were crucial in scraping, processing, and modeling data for stock movement prediction based on Reddit sentiment.
 
+# Scraping Process and Challenges
+The goal of the scraping process was to gather stock-related discussions, particularly those focused on Tesla, from Reddit using the Reddit API.
+
+## API Account Creation:
+- A developer account was created, and an application was registered to obtain the necessary API credentials for accessing Reddit data.
+
+## Keyword-Based Data Extraction:
+- Initially, the data was extracted using the keyword "stocks." This broad search resulted in posts about various companies. However, analyzing discussions from multiple companies posed challenges related to data consistency and prediction accuracy. To focus on more relevant discussions, the scope was narrowed to posts specifically related to Tesla.
+
+## Columns Extracted:
+The following key features were extracted from Tesla-related Reddit posts:
+
+- Title: Main topic of discussion.
+- Score: Popularity of the post, indicating the level of interest from Reddit users.
+- Upvote Ratio: Ratio of upvotes to total votes, giving an idea of the sentiment within the post.
+- Number of Comments: Engagement level, indicating how active the discussion is.
+- Created At: Timestamp indicating when the post was made, useful for aligning with real-time stock data.
+- Body: The detailed content of the post, used for sentiment analysis.
+
 
 
 
